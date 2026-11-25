@@ -90,15 +90,10 @@ const MODEL_MAPPING = {
 };
 
 // Used when an unrecognized alias is requested. Must point at a live model.
-const DEFAULT_MODEL = 'google/gemma-4-31b-it';
+const DEFAULT_MODEL = 'minimaxai/minimax-m3.1-flash';
 
 // Ordered by observed reliability/speed — an early failing model delays every fallback behind it.
-const FALLBACK_MODELS = [
-  'google/diffusiongemma-26b-a4b-it',
-  'google/gemma-4-31b-it',
-  'mistralai/mistral-nemotron',
-  'nvidia/nemotron-3-super-120b-a12b'
-];
+const FALLBACK_MODELS = [];
 
 // ─── Middleware ─────────────────────────────────────────────────────────
 
